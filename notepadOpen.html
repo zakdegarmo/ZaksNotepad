@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/zakde/Documents/htmlNotepadNotes/notepadOpen.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak's Notepad - A No Frills Blog About Digital Life On The Modern Web</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        /* Make the content area editable and styled */
+        #notepad-content {
+            background-color: #fcfcfc;
+            border: 1px solid #ddd;
+            padding: 15px;
+            min-height: 500px; /* Make it tall enough to be useful */
+            overflow-y: auto; /* Add scroll if content exceeds height */
+            white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+            word-wrap: break-word; /* Break long words */
+            font-family: 'Courier New', Courier, monospace; /* Monospace for text editing */
+            font-size: 0.95em;
+            line-height: 1.5;
+            outline: none; /* Remove blue outline on focus */
+            -webkit-user-modify: read-write-plaintext-only; /* Allow plaintext editing for consistency */
+            user-modify: read-write-plaintext-only; /* Standard way for plaintext editing */
+            /* Add some hints for the user */
+            position: relative;
+        }
+        #notepad-content:empty:before {
+            content: "Start typing or paste your notes here...";
+            color: #aaa;
+            font-style: italic;
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9f7ef;
+            border: 1px solid #d4edda;
+            border-radius: 5px;
+            color: #155724;
+            font-size: 0.9em;
+        }
+        .instructions p {
+            margin: 5px 0;
+        }
+        .instructions strong {
+            color: #0d3617;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Personal Notepad</h1>
+
+        <div id="notepad-content" contenteditable="true"><br></div>
+
+        <div class="instructions">
+            <p><strong>Important:</strong> After typing or pasting your notes, remember to <strong>save this page (`Ctrl+S` or Right-Click -&gt; Save Page As...)</strong> to persist your changes directly into this `index.html` file.</p>
+            <p>To share with Gemini: simply provide the local file path (e.g., `file:///path/to/your/index.html`) if it supports local file access, or serve it via a simple HTTP server (like Bun's) and provide that URL (e.g., `http://localhost:3000/index.html`).</p>
+        </div>
+    </div>
+
+</body></html>
