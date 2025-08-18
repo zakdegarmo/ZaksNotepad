@@ -1,0 +1,34 @@
+Directive_Type: NLD_ONTOLOGICAL_REPORT
+Target_Context: "ENTER_WEB_ADDRESS_TARGET_HERE"
+Purpose: "To generate a standardized, analytical summary of the page by interpreting it through the 10 core concepts and the W5H competency questions of MyOntology."
+Response_Format: "Return the following information as a single, valid JSON-LD object using the provided @context, and structure. Ensure the output is a single, clean JSON object with no surrounding text or markdown formatting."
+
+Query_Parameters: {
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "Self": "https://zakdegarmo.github.io/MyOntology/docs/Self.html",
+    "Thought": "https://zakdegarmo.github.io/MyOntology/docs/Thought.html",
+    "Logic": "https://zakdegarmo.github.io/MyOntology/docs/Logic.html",
+    "Unity": "https://zakdegarmo.github.io/MyOntology/docs/Unity.html",
+    "Existence": "https://zakdegarmo.github.io/MyOntology/docs/Existence.html",
+    "Improvement": "https://zakdegarmo.github.io/MyOntology/docs/Improvement.html",
+    "Mastery": "https://zakdegarmo.github.io/MyOntology/docs/Mastery.html",
+    "Resonance": "https://zakdegarmo.github.io/MyOntology/docs/Resonance.html",
+    "Transcendence": "https://zakdegarmo.github.io/MyOntology/docs/Transcendence.html",
+    "Everything": "https://zakdegarmo.github.io/MyOntology/docs/Nothing%20and%20Everything.html",
+    "W5H":"https://zakdegarmo.github.io/MyOntology/docs/Competency-Questions-for-the-MyOS-Ontology.html"
+  },
+  "@id":"ENTER_WEB_ADDRESS_TARGET_HERE"
+  "skos:prefLabel": "Provide a concise, descriptive title for this conversation.",
+  "skos:definition": "Provide a 1-2 sentence summary of the main topic and outcome.",
+  "Self": "Define the role and identity of the page.",
+  "Thought": "Describe the primary thought process or intellectual journey.",
+  "Logic": "Explain the core logic or reasoning.",
+  "Unity": "Describe the state of collaboration or synthesis achieved.",
+  "Existence": "What new concept or reality was brought into existence on the page?",
+  "Improvement": "How did this page improve understanding?",
+  "Mastery": "What concept or skill was mastered or significantly advanced?",
+  "Resonance": "Describe the page's connection to broader goals or external ideas.",
+  "Transcendence": "Did this page lead to a higher level of understanding or a breakthrough insight?",
+  "Everything": "Provide a holistic closing statement about the page's overall value."
+}
